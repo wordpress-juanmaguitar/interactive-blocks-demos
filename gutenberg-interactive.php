@@ -19,18 +19,8 @@
  * Requires PHP: 5.6
  */
 
-// Define WP_BOOTSTRAP_BLOCKS_PLUGIN_FILE.
-if ( ! defined( 'GUTENBERG_INTERACTIVE_BLOCKS_PLUGIN_FILE' ) ) {
-	define( 'GUTENBERG_INTERACTIVE_BLOCKS_PLUGIN_FILE', __FILE__ );
+function register_interactive_block_demos() {
+	register_block_type(  __DIR__ . '/build/counter-js/block.json' );
 }
 
-if ( ! defined( 'GUTENBERG_INTERACTIVE_BLOCKS_ABSPATH' ) ) {
-	define( 'GUTENBERG_INTERACTIVE_BLOCKS_ABSPATH', trailingslashit( dirname( GUTENBERG_INTERACTIVE_BLOCKS_PLUGIN_FILE ) ) );
-}
-
-if ( ! defined( 'GUTENBERG_INTERACTIVE_BLOCKS_ASSETSURL' ) ) {
-	define( 'GUTENBERG_INTERACTIVE_BLOCKS_ASSETSURL', esc_url( trailingslashit( plugins_url( '/build/', GUTENBERG_INTERACTIVE_BLOCKS_PLUGIN_FILE ) ) ) );
-}
-
-require_once __DIR__ . '/inc/class-blocks.php';
-Gutenberg_Interactive\Blocks::instance();
+add_action( 'init', 'register_interactive_block_demos');
