@@ -1,3 +1,21 @@
 .wp-block-gutenberg-interactive-counter-js {
 	color: blue;
 }
+
+.wp-block-gutenberg-interactive-counter-js button {
+	cursor: pointer;
+}
+
+.wp-block-gutenberg-interactive-counter-js * {
+	font-size: 20px;
+}
+
+.wp-block-gutenberg-interactive-counter-js input,
+.wp-block-gutenberg-interactive-counter-js button {
+	font-size: 30px;
+	padding: 10px;
+}
+
+.wp-block-gutenberg-interactive-counter-js input {
+	width: 100px;
+}

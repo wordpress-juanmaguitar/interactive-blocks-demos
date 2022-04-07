@@ -28,3 +28,7 @@ npx wp-env start
 
 To set up WordPress locally, you can use something like [Local](https://localwp.com/).
 
+## TO-DO
+
+- [ ] Fix register several blocks with the same plugin (check https://www.youtube.com/watch?v=lwXXckW3dT0)
+

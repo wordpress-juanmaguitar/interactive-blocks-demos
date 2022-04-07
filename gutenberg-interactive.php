@@ -8,7 +8,7 @@
  *
  * Plugin Name: Gutenberg&nbsp;❤️&nbsp;&nbsp;Interactivity 
  * Plugin URI:  https://github.com/swissspidy/gutenberg-interactive/
- * Description: An exploratory plugin for using <a href="https://amp.dev/documentation/guides-and-tutorials/start/bento_guide/">Bento components</a> in Gutenberg.
+ * Description: A plugin to show different approaches of creating interactive blocks with Gutenberg.
  * Version:     0.0.1
  * Author:      Pascal Birchler
  * Author URI:  https://pascalbirchler.com

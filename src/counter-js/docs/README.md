@@ -1,3 +1,10 @@
+## To take into account
+
+- When the code block is updated the Block Editor needs to be updated (refresh page) to get the new code functionality
+- When the code block is updated there's no need to remove and add again the block in the Block Editor: click accepts to  "Attempt block recovery"
+- Update the page to get new code in the client as well
+
+
 ## `block.json`
 
 It defines, among other things, the location of each file required for the block's behaviour (in both the editor and the client)
