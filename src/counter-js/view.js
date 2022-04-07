@@ -5,5 +5,10 @@ window.addEventListener( 'load', () => {
 	const decrementButton = document.querySelector(
 		'.wp-block-gutenberg-interactive-counter-js__decrement'
 	);
-	debugger;
+	incrementButton.addEventListener( 'click', () => {
+		console.log("+")
+	})
+	decrementButton.addEventListener( 'click', () => {
+		console.log("-")
+	})
 } );

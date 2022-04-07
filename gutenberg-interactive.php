@@ -6,7 +6,7 @@
  * @license   https://www.apache.org/licenses/LICENSE-2.0 Apache License 2.0
  * @link      https://github.com/swissspidy/gutenberg-interactive
  *
- * Plugin Name: Gutenberg&nbsp;❤️&nbsp;&nbsp;Bento
+ * Plugin Name: Gutenberg&nbsp;❤️&nbsp;&nbsp;Interactivity 
  * Plugin URI:  https://github.com/swissspidy/gutenberg-interactive/
  * Description: An exploratory plugin for using <a href="https://amp.dev/documentation/guides-and-tutorials/start/bento_guide/">Bento components</a> in Gutenberg.
  * Version:     0.0.1

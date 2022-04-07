@@ -22,5 +22,9 @@ TBD
 4. Run `npm run build`
 5. Go to your WordPress site and activate this plugin.
 
+```
+npx wp-env start
+```
+
 To set up WordPress locally, you can use something like [Local](https://localwp.com/).
 

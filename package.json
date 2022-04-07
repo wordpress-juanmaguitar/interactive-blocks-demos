@@ -32,7 +32,7 @@
 		"@wordpress/scripts": "^22.3.0"
 	},
 	"scripts": {
-		"build": "npm run build:blocks && npm run build:self-hosting && npm run build:lightbox-gallery && npm run build:copy-tmp-files",
+		"build": "npm run build:blocks",
 		"build:blocks": "wp-scripts build",
 		"build:self-hosting": "wp-scripts build src/self-hosting/interactive-accordion.js src/self-hosting/interactive-base-carousel.js src/self-hosting/interactive-date-countdown.js src/self-hosting/interactive-fit-text.js src/self-hosting/interactive-lightbox-gallery.js src/self-hosting/interactive-social-share.js --output-path=tmp1",
 		"build:lightbox-gallery": "npx wp-scripts build src/lightbox-gallery/lightbox-gallery.js --output-path=tmp2",
