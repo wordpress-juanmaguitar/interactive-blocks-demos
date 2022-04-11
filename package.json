@@ -28,7 +28,7 @@
 		"lodash": "^4.17.21"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^4.4.0",
+		"@wordpress/env": "^4.5.0",
 		"@wordpress/scripts": "^22.3.0"
 	},
 	"scripts": {
