@@ -1,0 +1,21 @@
+.wp-block-gutenberg-interactive-counter-alpine {
+	color: green;
+}
+
+.wp-block-gutenberg-interactive-counter-alpine button {
+	cursor: pointer;
+}
+
+.wp-block-gutenberg-interactive-counter-alpine * {
+	font-size: 20px;
+}
+
+.wp-block-gutenberg-interactive-counter-alpine input,
+.wp-block-gutenberg-interactive-counter-alpine button {
+	font-size: 30px;
+	padding: 10px;
+}
+
+.wp-block-gutenberg-interactive-counter-alpine input {
+	width: 100px;
+}

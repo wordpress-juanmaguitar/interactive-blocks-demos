@@ -22,6 +22,7 @@
 function register_interactive_block_demos() {
 	register_block_type(  __DIR__ . '/build/counter-js/block.json' );
 	register_block_type(  __DIR__ . '/build/counter-web-component/block.json' );
+	register_block_type(  __DIR__ . '/build/counter-alpine/block.json' );
 }
 
 add_action( 'init', 'register_interactive_block_demos');
