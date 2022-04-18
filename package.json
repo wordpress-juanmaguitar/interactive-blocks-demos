@@ -29,7 +29,7 @@
 	},
 	"devDependencies": {
 		"@wordpress/env": "^4.5.0",
-		"@wordpress/scripts": "^22.3.0"
+		"@wordpress/scripts": "^22.4.0"
 	},
 	"scripts": {
 		"build": "npm run build:blocks",
