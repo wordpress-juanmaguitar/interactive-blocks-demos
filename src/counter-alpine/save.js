@@ -1,20 +1,14 @@
 import { useBlockProps } from '@wordpress/block-editor';
 
-const Save = ( { attributes } ) => {
-	return (
-		<div
-			{ ...useBlockProps.save() }
-			x-data={ `{ count: ${ attributes.initial } }` }
-		>
-			<button x-on:click={ `count += ${ attributes.increment }` }>
-				+
-			</button>
-			<input width="5" type="number" x-bind:value="count" />
-			<button x-on:click={ `count -= ${ attributes.increment }` }>
-				-
-			</button>
-		</div>
-	);
-};
+const Save = ( { attributes } ) => (
+	<div
+		{ ...useBlockProps.save() }
+		x-data={ `{ count: ${ attributes.initial } }` }
+	>
+		<button x-on:click={ `count += ${ attributes.increment }` }>+</button>
+		<input width="5" type="number" x-bind:value="count" />
+		<button x-on:click={ `count -= ${ attributes.increment }` }>-</button>
+	</div>
+);
 
 export default Save;
