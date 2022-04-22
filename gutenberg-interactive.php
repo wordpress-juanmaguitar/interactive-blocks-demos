@@ -19,24 +19,26 @@
  * Requires PHP: 5.6
  */
 
-function register_interactive_block_demos() {
+function interactive_block_demos_alpine_render_callback( $attributes, $content ) {
+	wp_enqueue_script( 'AlpineJS' );
+	return $content;
+}
+
+function interactive_block_demos_register() {
 	wp_register_script(
 		'AlpineJS',
 		'https://unpkg.com/alpinejs@3.9.6/dist/cdn.min.js',
 		array(),
 		"3.9.6", 
 		true // Load it in the footer
-	  );
-	wp_enqueue_script( 'AlpineJS' );
+	);
 
 	register_block_type(  __DIR__ . '/build/counter-js/block.json' );
 	register_block_type(  __DIR__ . '/build/counter-web-component/block.json' );
-	register_block_type(  __DIR__ . '/build/counter-alpine/block.json' );
-
-	
-	
-	
+	register_block_type(  __DIR__ . '/build/counter-alpine/block.json', array(
+		'render_callback' => 'interactive_block_demos_alpine_render_callback'
+	));
 }
 
-add_action( 'init', 'register_interactive_block_demos');
+add_action( 'init', 'interactive_block_demos_register');
 
