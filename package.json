@@ -28,6 +28,7 @@
 		"lodash": "^4.17.21"
 	},
 	"devDependencies": {
+		"@babel/preset-react": "^7.16.7",
 		"@wordpress/env": "^4.5.0",
 		"@wordpress/scripts": "^22.3.0"
 	},
