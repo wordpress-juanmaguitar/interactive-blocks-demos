@@ -1,0 +1,1 @@
+console.log("counter alpine view.js")

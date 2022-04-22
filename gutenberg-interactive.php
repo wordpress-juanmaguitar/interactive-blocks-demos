@@ -20,9 +20,23 @@
  */
 
 function register_interactive_block_demos() {
+	wp_register_script(
+		'AlpineJS',
+		'https://unpkg.com/alpinejs@3.9.6/dist/cdn.min.js',
+		array(),
+		"3.9.6", 
+		true // Load it in the footer
+	  );
+	wp_enqueue_script( 'AlpineJS' );
+
 	register_block_type(  __DIR__ . '/build/counter-js/block.json' );
 	register_block_type(  __DIR__ . '/build/counter-web-component/block.json' );
 	register_block_type(  __DIR__ . '/build/counter-alpine/block.json' );
+
+	
+	
+	
 }
 
 add_action( 'init', 'register_interactive_block_demos');
+
