@@ -1,4 +1,15 @@
+const template = ( initial ) => `
+	<button class="increment">+</button>
+	<input value="${ initial }" />
+	<button class="decrement">-</button>
+`;
+
 class GutenbergCounter extends HTMLElement {
+	constructor() {
+		super();
+		this.attachShadow( { mode: 'open' } );
+	}
+
 	connectedCallback() {
 		if ( ! this.hasAttribute( 'value' ) ) {
 			this.setAttribute( 'value', 0 );
@@ -6,35 +17,24 @@ class GutenbergCounter extends HTMLElement {
 		if ( ! this.hasAttribute( 'increment' ) ) {
 			this.setAttribute( 'increment', 1 );
 		}
-		setTimeout( () => {
-			this.increment = this.querySelector(
-				'.wp-block-gutenberg-interactive-counter-web-component__increment'
-			);
-			this.decrement = this.querySelector(
-				'.wp-block-gutenberg-interactive-counter-web-component__decrement'
-			);
-			this.value = this.querySelector(
-				'.wp-block-gutenberg-interactive-counter-web-component__value'
-			);
 
-			this.increment.addEventListener( 'click', () => {
-				const oldValue = parseInt( this.getAttribute( 'value' ), 10 );
-				const increment = parseInt(
-					this.getAttribute( 'increment' ),
-					10
-				);
-				this.setAttribute( 'value', oldValue + increment );
-				this.replaceValue();
-			} );
-			this.decrement.addEventListener( 'click', () => {
-				const oldValue = parseInt( this.getAttribute( 'value' ), 10 );
-				const increment = parseInt(
-					this.getAttribute( 'increment' ),
-					10
-				);
-				this.setAttribute( 'value', oldValue - increment );
-				this.replaceValue();
-			} );
+		this.shadowRoot.innerHTML = template( this.getAttribute( 'value' ) );
+
+		this.increment = this.shadowRoot.querySelector( '.increment' );
+		this.decrement = this.shadowRoot.querySelector( '.decrement' );
+		this.input = this.shadowRoot.querySelector( 'input' );
+
+		this.increment.addEventListener( 'click', () => {
+			const oldValue = parseInt( this.getAttribute( 'value' ), 10 );
+			const increment = parseInt( this.getAttribute( 'increment' ), 10 );
+			this.setAttribute( 'value', oldValue + increment );
+			this.replaceValue();
+		} );
+		this.decrement.addEventListener( 'click', () => {
+			const oldValue = parseInt( this.getAttribute( 'value' ), 10 );
+			const increment = parseInt( this.getAttribute( 'increment' ), 10 );
+			this.setAttribute( 'value', oldValue - increment );
+			this.replaceValue();
 		} );
 	}
 
@@ -46,7 +46,7 @@ class GutenbergCounter extends HTMLElement {
 	}
 
 	replaceValue() {
-		this.value.value = this.getAttribute( 'value' );
+		this.input.value = this.getAttribute( 'value' );
 	}
 }
 
