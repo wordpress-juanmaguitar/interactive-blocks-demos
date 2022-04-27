@@ -8,11 +8,14 @@ window.addEventListener( 'load', () => {
 	const valueBox = document.querySelector(
 		'.wp-block-gutenberg-interactive-counter-js__value'
 	);
-	
+
 	incrementButton.addEventListener( 'click', () => {
-		valueBox.value = parseInt(valueBox.value) + parseInt(valueBox.step)
-	})
+		valueBox.value =
+			parseInt( valueBox.value ) + parseInt( valueBox.dataset.increment );
+	} );
+
 	decrementButton.addEventListener( 'click', () => {
-		valueBox.value = parseInt(valueBox.value) - parseInt(valueBox.step)
-	})
+		valueBox.value =
+			parseInt( valueBox.value ) - parseInt( valueBox.dataset.increment );
+	} );
 } );
