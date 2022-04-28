@@ -30,7 +30,7 @@
 	"devDependencies": {
 		"@babel/preset-react": "^7.16.7",
 		"@wordpress/env": "^4.5.0",
-		"@wordpress/scripts": "^22.4.0"
+		"@wordpress/scripts": "^22.5.0"
 	},
 	"scripts": {
 		"build": "npm run build:blocks",
