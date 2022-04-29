@@ -3,8 +3,8 @@ import { useBlockProps } from '@wordpress/block-editor';
 const Save = ( { attributes } ) => {
 	return (
 		<div { ...useBlockProps.save() }>
+			<p>jQuery Counter</p>
 			<pre>
-				jQuery Counter
 				{ JSON.stringify(attributes, null, 2)}
 			</pre>
 			<button className="wp-block-gutenberg-interactive-counter-jquery__decrement">

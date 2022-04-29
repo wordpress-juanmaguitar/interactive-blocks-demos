@@ -5,6 +5,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 const Edit = ( { attributes, setAttributes } ) => (
 	<>
 		<div { ...useBlockProps() }>
+			<p>React Counter</p>
 			<span>Initial value</span>
 			<NumberControl
 				placeholder="Enter the initial value"
