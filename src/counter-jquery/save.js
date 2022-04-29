@@ -4,7 +4,7 @@ const Save = ( { attributes } ) => {
 	return (
 		<div { ...useBlockProps.save() }>
 			<pre>
-				Javascript Counter
+				jQuery Counter
 				{ JSON.stringify(attributes, null, 2)}
 			</pre>
 			<button className="wp-block-gutenberg-interactive-counter-js__decrement">

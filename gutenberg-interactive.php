@@ -33,6 +33,7 @@ function interactive_block_demos_register() {
 	);
 
 	register_block_type(  __DIR__ . '/build/counter-js/block.json' );
+	register_block_type(  __DIR__ . '/build/counter-jquery/block.json' );
 	register_block_type(  __DIR__ . '/build/counter-web-component/block.json' );
 	register_block_type(  __DIR__ . '/build/counter-alpine/block.json', array(
 		'render_callback' => 'interactive_block_demos_alpine_render_callback'
