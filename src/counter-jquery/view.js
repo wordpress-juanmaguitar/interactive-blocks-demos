@@ -1,20 +1,15 @@
-window.addEventListener( 'load', () => {
-	console.log("jQuery");
-	console.log(jQuery);
-	const incrementButton = document.querySelector(
-		'.wp-block-gutenberg-interactive-counter-js__increment'
-	);
-	const decrementButton = document.querySelector(
-		'.wp-block-gutenberg-interactive-counter-js__decrement'
-	);
-	const valueBox = document.querySelector(
-		'.wp-block-gutenberg-interactive-counter-js__value'
-	);
-	
-	incrementButton.addEventListener( 'click', () => {
-		valueBox.value = parseInt(valueBox.value) + parseInt(valueBox.step)
+console.log("---")
+console.log(jQuery)
+jQuery('document').load( () => {
+	const $input = jQuery('.wp-block-gutenberg-interactive-counter-js__value');
+	const step = parseInt($input.attr("step"))
+
+	jQuery('.wp-block-gutenberg-interactive-counter-js__increment').click(() => {
+		const currentValue = parseInt($input.val())
+		$input.val(currentValue + step)
 	})
-	decrementButton.addEventListener( 'click', () => {
-		valueBox.value = parseInt(valueBox.value) - parseInt(valueBox.step)
-	})
-} );
+	jQuery('.wp-block-gutenberg-interactive-counter-js__decrement').click(() => {
+		const currentValue = parseInt($input.val())
+		$input.val(currentValue - step)
+	});
+});
