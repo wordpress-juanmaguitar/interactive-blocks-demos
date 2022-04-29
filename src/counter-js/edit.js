@@ -8,7 +8,7 @@ const Edit = ( { attributes, setAttributes } ) => (
 		<div { ...useBlockProps() }>
 			<span>Initial value</span>
 			<NumberControl
-				placeholder="Enter the ini__tial value"
+				placeholder="Enter the initial value"
 				value={ attributes.initial }
 				onChange={ ( val ) => setAttributes( { initial: val } ) }
 			/>
