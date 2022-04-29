@@ -35,12 +35,12 @@ function interactive_block_demos_register() {
 }
 
 add_action( 'init', 'interactive_block_demos_register');
-add_filter( 'render_block_gutenberg-interactive/counter-alpine', function( $content ) {
-	wp_enqueue_script( 'AlpineJS' );
-    return $content;
-});
 add_filter( 'render_block_gutenberg-interactive/counter-jquery', function( $content ) {
 	wp_enqueue_script( 'jquery' );
     return $content;
 });
 
+add_filter( 'render_block_gutenberg-interactive/counter-alpine', function( $content ) {
+	wp_enqueue_script( 'AlpineJS' );
+    return $content;
+});
