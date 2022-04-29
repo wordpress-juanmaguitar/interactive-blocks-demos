@@ -4,26 +4,26 @@
 	"description": "An exploratory plugin to display several approaches of creating interactive blocks in Gutenberg",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/swissspidy/gutenberg-interactive.git"
+		"url": "git+https://github.com/wordpress-juanmaguitar/interactive-blocks-demos.git"
 	},
-	"author": "swissspidy",
-	"license": "Apache-2.0",
+	"author": "Juanma Garrido",
+	"license": "GPL-2.0-or-later",
 	"bugs": {
-		"url": "https://github.com/swissspidy/gutenberg-interactive/issues"
+		"url": "https://github.com/wordpress-juanmaguitar/interactive-blocks-demos/issues"
 	},
-	"homepage": "https://github.com/swissspidy/gutenberg-interactive#readme",
+	"homepage": "https://github.com/wordpress-juanmaguitar/interactive-blocks-demos#readme",
 	"dependencies": {
 		"@wordpress/blob": "^3.6.0",
-		"@wordpress/block-editor": "^8.5.1",
+		"@wordpress/block-editor": "^8.6.0",
 		"@wordpress/blocks": "^11.3.1",
 		"@wordpress/components": "^19.8.0",
 		"@wordpress/compose": "^5.4.0",
-		"@wordpress/core-data": "^4.4.1",
-		"@wordpress/data": "^6.3.0",
+		"@wordpress/core-data": "^4.5.0",
+		"@wordpress/data": "^6.7.0",
 		"@wordpress/element": "^4.5.0",
 		"@wordpress/i18n": "^4.6.0",
 		"@wordpress/icons": "^8.2.0",
-		"@wordpress/primitives": "^3.4.0",
+		"@wordpress/primitives": "^3.5.0",
 		"classnames": "^2.3.1",
 		"lodash": "^4.17.21",
 		"react": "^18.1.0",
@@ -31,7 +31,7 @@
 	},
 	"devDependencies": {
 		"@babel/preset-react": "^7.16.7",
-		"@wordpress/env": "^4.5.0",
+		"@wordpress/env": "^4.6.0",
 		"@wordpress/scripts": "^22.4.0"
 	},
 	"scripts": {
