@@ -5,10 +5,9 @@
 	"license": "Apache-2.0",
 	"authors": [
 		{
-			"name": "Pascal Birchler",
-			"email": "pascalb@google.com",
-			"homepage": "https://pascalbirchler.com",
-			"role": "Developer"
+			"name": "Juanma Garrido",
+			"email": "juanma.garrido@automattic.com",
+			"role": "Developer Relations"
 		}
 	],
 	"require": {

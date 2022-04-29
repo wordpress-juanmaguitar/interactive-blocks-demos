@@ -1,3 +1,6 @@
 {
-    "plugins": ["."]
+    "plugins": [
+        ".",
+        "https://github.com/WordPress/gutenberg/releases/download/v13.1.0/gutenberg.zip"
+    ]
 }
