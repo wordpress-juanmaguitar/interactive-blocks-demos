@@ -37,6 +37,7 @@ function interactive_block_demos_register() {
 	register_block_type(  __DIR__ . '/build/counter-alpine/block.json', array(
 		'render_callback' => 'interactive_block_demos_alpine_render_callback'
 	));
+	register_block_type(  __DIR__ . '/build/counter-react/block.json' );
 }
 
 add_action( 'init', 'interactive_block_demos_register');
