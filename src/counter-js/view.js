@@ -1,13 +1,8 @@
 window.addEventListener( 'load', () => {
-	const incrementButton = document.querySelector(
-		'.wp-block-gutenberg-interactive-counter-js__increment'
-	);
-	const decrementButton = document.querySelector(
-		'.wp-block-gutenberg-interactive-counter-js__decrement'
-	);
-	const valueBox = document.querySelector(
-		'.wp-block-gutenberg-interactive-counter-js__value'
-	);
+	const blockClassPrefix = '.wp-block-gutenberg-interactive-counter-js'
+	const incrementButton = document.querySelector(blockClassPrefix + '__increment');
+	const decrementButton = document.querySelector(blockClassPrefix + '__decrement');
+	const valueBox = document.querySelector(blockClassPrefix + '__value');
 	
 	incrementButton.addEventListener( 'click', () => {
 		valueBox.value = parseInt(valueBox.value) + parseInt(valueBox.step)

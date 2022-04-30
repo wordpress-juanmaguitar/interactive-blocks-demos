@@ -1,5 +1,6 @@
 import { useBlockProps } from '@wordpress/block-editor';
 
+const blockClassPrefix = 'wp-block-gutenberg-interactive-counter-js'
 const Save = ( { attributes } ) => {
 	return (
 		<div { ...useBlockProps.save() }>
@@ -7,11 +8,11 @@ const Save = ( { attributes } ) => {
 			<pre>
 				{ JSON.stringify(attributes, null, 2)}
 			</pre>
-			<button className="wp-block-gutenberg-interactive-counter-js__decrement">
+			<button className={blockClassPrefix + "__decrement"}>  
 				-
 			</button>
-			<input width="5" step={ attributes.increment } type="number" className="wp-block-gutenberg-interactive-counter-js__value" value={ attributes.initial } />
-			<button className="wp-block-gutenberg-interactive-counter-js__increment">
+			<input width="5" step={ attributes.increment } type="number" className={blockClassPrefix + "__value"} value={ attributes.initial } />
+			<button className={blockClassPrefix + "__increment"}>
 				+
 			</button>
 			
