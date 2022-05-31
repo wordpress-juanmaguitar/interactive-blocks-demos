@@ -27,5 +27,9 @@ To set up WordPress locally, you can use something like [Local](https://localwp.
 
 ## TO-DO
 
-- [ ] Fix register several blocks with the same plugin (check https://www.youtube.com/watch?v=lwXXckW3dT0)
+- [ ] Add a more complex (interesting) block to the demo
+	- Quiz with several questions
+	- State in each question
+	- State in the overall quiz
+	- Each quesiton allow different types of blocks (images, text...)
 
